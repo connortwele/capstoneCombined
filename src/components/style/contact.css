@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto+Condensed|Ubuntu');
+
+h3{
+    font-family: 'Righteous';
+}
+
+.contentContact{
+    width: 50%;
+    height: auto;
+}
+
+.containerContact{
+    display: flex;
+    direction: column;
+    justify-content: space-around;
+}
+
+input{
+    margin-bottom: 15%;
+    margin-right: 10%;
+}
+.contactClock{
+    height: 50%;
+    width: auto;
+}
