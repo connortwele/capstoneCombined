@@ -1,25 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto+Condensed|Ubuntu');
 
+
 h3{
     font-family: 'Righteous';
 }
 
+
+
 .contentContact{
+    background-color: white;
+    /* padding: 1%; */
+    /* margin-top: 10%; */
+    position: fixed;
+    z-index: 9;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    opacity: .6;
+}
+
+.contentContact:hover{
+    background-color: white;
+    /* padding: 1%; */
+    /* margin-top: 10%; */
+    position: fixed;
+    z-index: 9;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    opacity: 1;
+}
+
+
+
+.contactClock{
+    display: block;
+    position: sticky;
     width: 50%;
     height: auto;
+    align-items: center;
+    margin:auto;
+    border-radius: .5%;
 }
 
-.containerContact{
-    display: flex;
-    direction: column;
-    justify-content: space-around;
-}
+/* media query below for smaller screen */
+/* below is used so form doesnt run over footer */
 
-input{
-    margin-bottom: 15%;
-    margin-right: 10%;
-}
-.contactClock{
-    height: 50%;
-    width: auto;
-}
+/* .containerContact{
+    margin-bottom: 45%;
+} */

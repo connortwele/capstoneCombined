@@ -1,0 +1,51 @@
+.singleName{
+    width: 25%;
+    height: auto;
+    border: 1px solid gray;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.descriptionContainer{
+    /* background-color: whitesmoke; */
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.singleDescWeb{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-right: 1px solid gray;
+    padding: 4%;
+}
+.singleBooleans{
+    margin-right: auto;
+}
+
+.singleBooleans p{
+    padding-top: 20%;
+    border-bottom: 1px solid gray;
+}
+
+.singleImage{
+    width: 45%;
+    height: auto;
+    margin-left: 10%;
+    display: inline-block;
+}
+
+.singleAddress{
+    padding: 5% 5%;
+    display: inline-block;
+    margin-left: 10%;
+    border: 1px solid gray;
+    border-radius: 3%;
+    margin-top: 5%
+}

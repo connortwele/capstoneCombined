@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import './style/attractions.css'
 // Single Exercise Component
 const Attraction = (props) => {
   return (
     <tr>
       <td>{props.attraction.name}</td>
-      <td>{props.attraction.description}</td>
-      <td><a href= {props.attraction.website} >Website</a></td>
+      {/* <td>{props.attraction.description}</td> */}
+      <td><img className="attractionsIMG"src={props.attraction.imageURL}></img></td>
+      <td><a href= {props.attraction.website}>Website</a></td>
       <td>
         <Link to={"/attractions/" + props.attraction._id}>learn more</Link>|{" "}
         {/* <a

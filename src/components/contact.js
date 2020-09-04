@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './style/contact.css'
 import clock from '../assets/unionTerminalClock.jpeg'
+import musicHall from '../assets/musicHall.jpeg'
 export default class contact extends Component {
   constructor (props){
     super(props)
@@ -53,7 +54,7 @@ export default class contact extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="contactContainerReturn">
           <h3 className='text-center'>Contact Us</h3>
           <div className="containerContact">
             <div className="contentContact">
@@ -70,7 +71,7 @@ export default class contact extends Component {
                   </input>
               </div>
               <div className="form-group">
-                  <label>Email</label>
+                  <label>Email:</label>
                   <input
                   type="email"
                   required
@@ -81,7 +82,7 @@ export default class contact extends Component {
                   </input>
               </div>
               <div className="form-group">
-                <label>Questions and Comments</label>
+                <label>Questions and Comments:</label>
                   <textarea
                   type="text"
                   className="form-control"
