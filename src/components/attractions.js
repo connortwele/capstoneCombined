@@ -1,25 +1,39 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import "bootstrap/dist/css/bootstrap.min.css";
 import './style/attractions.css'
+
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 // Single Exercise Component
 const Attraction = (props) => {
   return (
-    <tr>
-      <td>{props.attraction.name}</td>
-      {/* <td>{props.attraction.description}</td> */}
-      <td><img className="attractionsIMG"src={props.attraction.imageURL}></img></td>
-      <td><a href= {props.attraction.website}>Website</a></td>
-      <td>
-        <Link to={"/attractions/" + props.attraction._id}>learn more</Link>|{" "}
-        {/* <a
-        href="#"
-        onClick={() =>{props.deleteAttraction(props.attraction._id)}}
-        >
-          delete
-        </a> */}
-      </td>
-    </tr>
+    <div className="">
+    <Card className="attractionsCard" style={{ width: '60vw' }}>
+      <Card.Img variant="top" src={props.attraction.imageURL} />
+      <Card.Body>
+        <Card.Title className="text-center">{props.attraction.name}</Card.Title>
+        {/* <Button variant="secondary" block> */}
+        <Card.Text className="text-center">
+          <Link className="text-center"to={"/attractions/" + props.attraction._id}>Learn More</Link>
+        </Card.Text>
+        {/* </Button> */}
+        <Card.Text className="text-center">
+          <a href= {props.attraction.website}>Website</a>
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    </div>
+
+    // <tr>
+    //   <td>{props.attraction.name}</td>
+    //   <td><img className="attractionsIMG"src={props.attraction.imageURL}></img></td>
+    //   <td><a href= {props.attraction.website}>Website</a></td>
+    //   <td>
+    //     <Link to={"/attractions/" + props.attraction._id}>learn more</Link>|{" "}
+    //   </td>
+    // </tr>
   )
 }
 // ExerciseList Component
@@ -53,8 +67,9 @@ export default class ExercisesList extends Component {
   render() {
     return (
       <div>
-        <h3>Logged Exercises</h3>
-        <table className="table">
+        <h3 className="text-center attractionsHeader">Attractions</h3>
+        <div className="attractionsInnerContainer">
+        {/* <table className="table">
           <thead className="thead-light">
             <tr>
               <th>Name</th>
@@ -66,7 +81,10 @@ export default class ExercisesList extends Component {
           <tbody>
             {this.exerciseList()}
           </tbody>
-        </table>
+        </table> */}
+          
+            {this.exerciseList()}
+        </div>
       </div>
     )
   }

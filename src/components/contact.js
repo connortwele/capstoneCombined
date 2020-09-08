@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './style/contact.css'
 import clock from '../assets/unionTerminalClock.jpeg'
-import musicHall from '../assets/musicHall.jpeg'
 export default class contact extends Component {
   constructor (props){
     super(props)

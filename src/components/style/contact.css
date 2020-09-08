@@ -13,11 +13,11 @@ h3{
     /* margin-top: 10%; */
     position: fixed;
     z-index: 9;
-    width: 50%;
+    width: 50vw;
     text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
-    opacity: .6;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    opacity: .8;
 }
 
 .contentContact:hover{
@@ -26,10 +26,10 @@ h3{
     /* margin-top: 10%; */
     position: fixed;
     z-index: 9;
-    width: 50%;
+    width: 50vw;
     text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 25vw;
+    margin-right: 25vw;
     opacity: 1;
 }
 
@@ -38,16 +38,35 @@ h3{
 .contactClock{
     display: block;
     position: sticky;
-    width: 50%;
+    width: 50vw;
     height: auto;
     align-items: center;
     margin:auto;
     border-radius: .5%;
 }
 
-/* media query below for smaller screen */
-/* below is used so form doesnt run over footer */
 
-/* .containerContact{
-    margin-bottom: 45%;
-} */
+@media(max-width: 1000px ){
+.containerContact{
+    margin-bottom: 65vh;
+}
+.contentContact{
+    background-color: white;
+    position: absolute;
+    z-index: 9;
+    width: 60vw;
+    text-align: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    opacity: 1;
+}
+.contactClock{
+    display: none;
+    position: sticky;
+    width: 50vw;
+    height: auto;
+    align-items: center;
+    margin:auto;
+    border-radius: .5%;
+}
+}

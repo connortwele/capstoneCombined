@@ -1,4 +1,21 @@
-td img{
-    height: auto;
-    width: 25%;
+.attractionsHeader{
+    margin-bottom: 4vh;
+}
+
+.attractionsCard{
+    margin-left:auto;
+    margin-right: auto;
+    /* height: auto; */
+    margin-bottom: 3.5vh;
+    
+}
+
+.attractionsCard:hover{
+    transform: scale(1.05, 1.05);
+    box-shadow: -5px 5px 10px 5px gray;
+    z-index: 9
+}
+
+.attractionsLink{
+    text-decoration: none;
 }

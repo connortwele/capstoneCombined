@@ -47,10 +47,10 @@ const attractionSchema = new Schema({
         type: Boolean,
         required: true
     },
-    likes:{
-        type: String,
-        required: false
-    }
+    // likes:{
+    //     type: String,
+    //     required: false
+    // }
 })
 const Attraction = mongoose.model('Attraction', attractionSchema)
 module.exports = Attraction
