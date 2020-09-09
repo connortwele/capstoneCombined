@@ -136,7 +136,7 @@ export default class addAttraction extends Component {
               </input>
           </div>
           <div className="form-group">
-              <label>Description</label>
+              <label>Description:</label>
               <input
               type="text"
               required
@@ -147,7 +147,7 @@ export default class addAttraction extends Component {
               </input>
           </div>
           <div className="form-group">
-            <label>Website</label>
+            <label>Website:</label>
               <input
               type="text"
               className="form-control"
@@ -157,7 +157,7 @@ export default class addAttraction extends Component {
               </input>
           </div>
           <div className="form-group">
-            <label>Image(url)</label>
+            <label>Image(url):</label>
               <input
               type="text"
               className="form-control"

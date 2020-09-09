@@ -26,17 +26,9 @@ const Attraction = (props) => {
     </Card>
     </div>
 
-    // <tr>
-    //   <td>{props.attraction.name}</td>
-    //   <td><img className="attractionsIMG"src={props.attraction.imageURL}></img></td>
-    //   <td><a href= {props.attraction.website}>Website</a></td>
-    //   <td>
-    //     <Link to={"/attractions/" + props.attraction._id}>learn more</Link>|{" "}
-    //   </td>
-    // </tr>
   )
 }
-// ExerciseList Component
+
 export default class ExercisesList extends Component {
   constructor(props){
     super(props)
@@ -69,20 +61,6 @@ export default class ExercisesList extends Component {
       <div>
         <h3 className="text-center attractionsHeader">Attractions</h3>
         <div className="attractionsInnerContainer">
-        {/* <table className="table">
-          <thead className="thead-light">
-            <tr>
-              <th>Name</th>
-              <th>Description</th>
-              <th>Website</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {this.exerciseList()}
-          </tbody>
-        </table> */}
-          
             {this.exerciseList()}
         </div>
       </div>

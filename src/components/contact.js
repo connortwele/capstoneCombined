@@ -81,7 +81,7 @@ export default class contact extends Component {
                   </input>
               </div>
               <div className="form-group">
-                <label>Questions and Comments:</label>
+                <label>Questions/Comments:</label>
                   <textarea
                   type="text"
                   className="form-control"
